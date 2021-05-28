@@ -3,10 +3,10 @@
 ## Tasks
 
 ### Strategies
-Your task is to create three functions:
+Create three functions:
 1. The first function `callback1` takes one parameter: data as an array. This function calculates the sum of the elements in the array.
 2. The second function `callback2` takes one parameter: data as an array. This function multiplies the elements of the array. 
-3. The third function `w` takes two parameters: s as a string and callback as one of the previous two functions. This function transforms the string to array of lengths of words in the string and call the callback function from its second parameter as shown below.
+3. The third function `w` takes two parameters: s as a string and callback as one of the previous two functions. This function transforms the string into an array in which each element is represented by the length of a word in the string, and the function call the callback function from its second parameter as shown below:
 
 For example
 ```js
@@ -16,35 +16,35 @@ w('a bb ccc dddd', callback2); // result: 24
 
 
 ### Mocker
-Your task is to implement `mocker` function for dev mocking with 1s delay.
-It might be helpful in frontend development to make sure that your interface works well with data which will fetch with delays.
+Create the function `mocker` which will return defined data with 1 second delay.
+It might be helpful in Front-end development when there is a need to make sure that your interface works well with data that you get asynchronously. The use of the function is shown below:
 
 For example:
 ```js
 const getUsers = mocker([{id: 1, name: 'User1'}]);
 getUsers().then((users) => { // Will fire after 1 second.
-  console.log(users); // [{id: 1, name: 'User1'}];
+  console.log(users); // result: [{id: 1, name: 'User1'}];
 });
 ```
 
 ### Summarize1
-Your task is to create function `summarize1` that receives promises and returns promise with sum of their values as shown below.
+Create the function `summarize1` that receives promises and returns promise with sum of their values as shown below:
 
 For example:
 ```js
 const promise1 = Promise.resolve(4);
 const promise2 = new Promise((resolve) => resolve(2));
-summarize1(promise1, promise2).then((sum) => {console.log(sum);}); // 6
+summarize1(promise1, promise2).then((sum) => {console.log(sum);}); // result: 6
 ```
 
 ### Summarize2
-Your task is to create async function `summarize2` that receives promises and returns promise with sum of their values as shown below.
+Create the async function `summarize2` that receives promises and returns promise with sum of their values as shown below:
 
 For example:
 ```js
 const promise1 = Promise.resolve(4);
 const promise2 = new Promise((resolve) => resolve(2));
-summarize2(promise1, promise2).then((sum) => {console.log(sum);}); // 6
+summarize2(promise1, promise2).then((sum) => {console.log(sum);}); // result: 6
 ```
 
 Write your code in `src/index.js.
