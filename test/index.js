@@ -1,6 +1,6 @@
 const assert = require('assert');
 const {describe, beforeEach} = require("mocha");
-const {mocker, summarize1, summarize2} = require('../src');
+const {mocker, summarize1, summarize2, callback1, callback2} = require('../src');
 
 describe('strategies', () => {
 
