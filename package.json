@@ -7,10 +7,8 @@
     "test:junit": "cross-env MOCHA_FILE=junit.xml mocha test --reporter mocha-junit-reporter",
     "test:xunit": "cross-env MOCHA_FILE=xunit.xml mocha test --reporter mocha-xunit-reporter",
     "test": "npm run test:junit",
-    "build": "echo \"Dummy build script\""
-  },
-  "engines": {
-    "node": "<=12"
+    "build": "echo \"Dummy build script\"",
+    "test:local": "mocha"
   },
   "repository": {
     "type": "git",
