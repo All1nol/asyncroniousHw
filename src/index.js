@@ -4,8 +4,11 @@
  * @returns number
  */
  module.exports.callback1 = function(data) {
-    // Your implementation here
-    throw new Error('Task not implemented');
+    let sum = 0;
+    for (let i = 0; i < data.length; i++) {
+      sum += data[i];
+    }
+    return sum;
 };
 
 /**
@@ -14,8 +17,11 @@
  * @returns number
  */
 module.exports.callback2 = function(data) {
-    // Your implementation here
-    throw new Error('Task not implemented');
+    let product = 1;
+    for (let i = 0; i < data.length; i++) {
+      product *= data[i];
+    }
+    return product;
 };
 
 /**
@@ -24,8 +30,12 @@ module.exports.callback2 = function(data) {
  * @returns number
  */
 module.exports.w = function(s, callback) {
-    // Your implementation here
-    throw new Error('Task not implemented');
+    const words = s.split(" ");
+  const lengths = [];
+  for (let i = 0; i < words.length; i++) {
+    lengths.push(words[i].length);
+  }
+  return callback(lengths);
 };
 
 /**
@@ -44,8 +54,15 @@ module.exports.mocker = function mocker(data) {
  * @returns {Function}
  */
 module.exports.summarize1 = function summarize1() {
-    // Your implementation here
-    throw new Error('Task not implemented');
+    const promises = Array.prototype.slice.call(arguments);
+    const resolvedPromises = Promise.all(promises);
+    return resolvedPromises.then(function(values) {
+      let sum = 0;
+      for (let i = 0; i < values.length; i++) {
+        sum += values[i];
+      }
+      return sum;
+    });
 };
 
 /**
@@ -53,7 +70,14 @@ module.exports.summarize1 = function summarize1() {
  * @param arg...: {Promise}
  * @returns {Function}
  */
- module.exports.summarize2 = function summarize2() {
-    // Your implementation here
-    throw new Error('Task not implemented');
+ module.exports.summarize2 = async function summarize2() {
+    const promises = Array.prototype.slice.call(arguments);
+    const resolvedPromises = Promise.all(promises);
+    return resolvedPromises.then(function(values) {
+      let sum = 0;
+      for (let i = 0; i < values.length; i++) {
+        sum += values[i];
+      }
+      return sum;
+    });
 };
