@@ -71,6 +71,7 @@ module.exports.summarize1 = function summarize1() {
   // const args = Array.from(arguments);
   const results = await Promise.all(arguments);
   return results.reduce((sum, value) => sum + value, 0);
+  
 };
 
 /*
