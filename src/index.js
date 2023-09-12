@@ -4,11 +4,12 @@
  * @returns number
  */
  module.exports.callback1 = function(data) {
-    let sum = 0;
-    for (let i = 0; i < data.length; i++) {
-      sum += data[i];
+    let summarize1= 0;
+    for (let index = 0; index < data.length; index++) {
+      const element = data[index];  
+      summarize1 += element;
     }
-    return sum;
+    return summarize1;
 };
 
 /**
@@ -17,11 +18,12 @@
  * @returns number
  */
 module.exports.callback2 = function(data) {
-    let product = 1;
-    for (let i = 0; i < data.length; i++) {
-      product *= data[i];
-    }
-    return product;
+  let summarize2= 1;
+  for (let index = 0; index < data.length; index++) {
+    const element2 = data[index];
+    summarize2 *=element2;
+  }
+  return summarize2;
 };
 
 /**
@@ -30,12 +32,9 @@ module.exports.callback2 = function(data) {
  * @returns number
  */
 module.exports.w = function(s, callback) {
-    const words = s.split(" ");
-  const lengths = [];
-  for (let i = 0; i < words.length; i++) {
-    lengths.push(words[i].length);
-  }
-  return callback(lengths);
+  const blocks = s.split(" ");
+  const blockLength = blocks.map(block => block.length);
+  return callback(blockLength);
 };
 
 /**
@@ -43,10 +42,15 @@ module.exports.w = function(s, callback) {
  * @param data: {Array | Object}
  * @returns {Function}
  */
-module.exports.mocker = function mocker(data) {
-    // Your implementation here
-    throw new Error('Task not implemented');
-};
+// module.exports.mocker = function mocker(data) {
+//   new Promise(function(resolve){
+//     setTimeout(() => resolve("done!"),1000);
+//   });
+//   const getUsers = mocker([{id: 1, name: 'User1'}]);
+// getUsers().then((users) => { // Will fire after 1 second.
+//   console.log(users); // result: [{id: 1, name: 'User1'}];
+// });
+// };
 
 /**
  *
@@ -54,15 +58,8 @@ module.exports.mocker = function mocker(data) {
  * @returns {Function}
  */
 module.exports.summarize1 = function summarize1() {
-    const promises = Array.prototype.slice.call(arguments);
-    const resolvedPromises = Promise.all(promises);
-    return resolvedPromises.then(function(values) {
-      let sum = 0;
-      for (let i = 0; i < values.length; i++) {
-        sum += values[i];
-      }
-      return sum;
-    });
+  return Promise.all(arguments)
+    .then((results) => results.reduce((sum, value) => sum + value, 0));
 };
 
 /**
@@ -71,13 +68,13 @@ module.exports.summarize1 = function summarize1() {
  * @returns {Function}
  */
  module.exports.summarize2 = async function summarize2() {
-    const promises = Array.prototype.slice.call(arguments);
-    const resolvedPromises = Promise.all(promises);
-    return resolvedPromises.then(function(values) {
-      let sum = 0;
-      for (let i = 0; i < values.length; i++) {
-        sum += values[i];
-      }
-      return sum;
-    });
+  // const args = Array.from(arguments);
+  const results = await Promise.all(arguments);
+  return results.reduce((sum, value) => sum + value, 0);
 };
+
+/*
+const promise1 = Promise.resolve(4);
+const promise2 = new Promise((resolve) => resolve(2));
+summarize2(promise1, promise2).then((sum) => {console.log(sum);}); // result: 6
+*/

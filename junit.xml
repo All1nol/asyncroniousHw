@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0240" tests="19" failures="19">
+  <testsuite name="Root Suite" timestamp="2023-09-11T21:08:33" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="strategies" timestamp="2023-09-11T21:08:33" tests="6" file="C:\Users\newac\Desktop\Js\scope,class\8.4.async\8.4.async\test\index.js" time="0.0100" failures="6">
+    <testcase name="strategies should return 3 for a string &quot;1 2 3&quot; when apply callback1" time="0.0060" classname="should return 3 for a string &quot;1 2 3&quot; when apply callback1">
+      <failure message="Expected values to be strictly equal:
+[32m+ actual[39m [31m- expected[39m
+
+[32m+[39m [
+[32m+[39m   1,
+[32m+[39m   1,
+[32m+[39m   1
+[32m+[39m ]
+[31m-[39m 3" type="AssertionError"><![CDATA[AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+[32m+ actual[39m [31m- expected[39m
+
+[32m+[39m [
+[32m+[39m   1,
+[32m+[39m   1,
+[32m+[39m   1
+[32m+[39m ]
+[31m-[39m 3
+    at Context.<anonymous> (test\index.js:9:16)
+    at process.processImmediate (node:internal/timers:471:21)]]></failure>
+    </testcase>
+    <testcase name="strategies should return 6 for a string &quot;1 22 333&quot; when apply callback1" time="0.0010" classname="should return 6 for a string &quot;1 22 333&quot; when apply callback1">
+      <failure message="Expected values to be strictly equal:
+[32m+ actual[39m [31m- expected[39m
+
+[32m+[39m [
+[32m+[39m   1,
+[32m+[39m   2,
+[32m+[39m   3
+[32m+[39m ]
+[31m-[39m 6" type="AssertionError"><![CDATA[AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+[32m+ actual[39m [31m- expected[39m
+
+[32m+[39m [
+[32m+[39m   1,
+[32m+[39m   2,
+[32m+[39m   3
+[32m+[39m ]
+[31m-[39m 6
+    at Context.<anonymous> (test\index.js:14:16)
+    at process.processImmediate (node:internal/timers:471:21)]]></failure>
+    </testcase>
+    <testcase name="strategies should return 1 for a string &quot;1 2 3&quot; when apply callback2" time="0.0010" classname="should return 1 for a string &quot;1 2 3&quot; when apply callback2">
+      <failure message="Expected values to be strictly equal:
+[32m+ actual[39m [31m- expected[39m
+
+[32m+[39m [
+[32m+[39m   1,
+[32m+[39m   1,
+[32m+[39m   1
+[32m+[39m ]
+[31m-[39m 1" type="AssertionError"><![CDATA[AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+[32m+ actual[39m [31m- expected[39m
+
+[32m+[39m [
+[32m+[39m   1,
+[32m+[39m   1,
+[32m+[39m   1
+[32m+[39m ]
+[31m-[39m 1
+    at Context.<anonymous> (test\index.js:19:16)
+    at process.processImmediate (node:internal/timers:471:21)]]></failure>
+    </testcase>
+    <testcase name="strategies should return 24 for a string &quot;1 22 333 4444&quot; when apply callback1" time="0.0010" classname="should return 24 for a string &quot;1 22 333 4444&quot; when apply callback1">
+      <failure message="Expected values to be strictly equal:
+[32m+ actual[39m [31m- expected[39m
+
+[32m+[39m [
+[32m+[39m   1,
+[32m+[39m   2,
+[32m+[39m   3,
+[32m+[39m   4
+[32m+[39m ]
+[31m-[39m 24" type="AssertionError"><![CDATA[AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+[32m+ actual[39m [31m- expected[39m
+
+[32m+[39m [
+[32m+[39m   1,
+[32m+[39m   2,
+[32m+[39m   3,
+[32m+[39m   4
+[32m+[39m ]
+[31m-[39m 24
+    at Context.<anonymous> (test\index.js:24:16)
+    at process.processImmediate (node:internal/timers:471:21)]]></failure>
+    </testcase>
+    <testcase name="strategies should return 2 for a string &quot;11&quot; when apply callback1" time="0.0010" classname="should return 2 for a string &quot;11&quot; when apply callback1">
+      <failure message="Expected values to be strictly equal:
+[32m+ actual[39m [31m- expected[39m
+
+[32m+[39m [
+[32m+[39m   2
+[32m+[39m ]
+[31m-[39m 2" type="AssertionError"><![CDATA[AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+[32m+ actual[39m [31m- expected[39m
+
+[32m+[39m [
+[32m+[39m   2
+[32m+[39m ]
+[31m-[39m 2
+    at Context.<anonymous> (test\index.js:29:16)
+    at process.processImmediate (node:internal/timers:471:21)]]></failure>
+    </testcase>
+    <testcase name="strategies should return 2 for a string &quot;11&quot; when apply callback2" time="0.0000" classname="should return 2 for a string &quot;11&quot; when apply callback2">
+      <failure message="Expected values to be strictly equal:
+[32m+ actual[39m [31m- expected[39m
+
+[32m+[39m [
+[32m+[39m   2
+[32m+[39m ]
+[31m-[39m 2" type="AssertionError"><![CDATA[AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+[32m+ actual[39m [31m- expected[39m
+
+[32m+[39m [
+[32m+[39m   2
+[32m+[39m ]
+[31m-[39m 2
+    at Context.<anonymous> (test\index.js:34:16)
+    at process.processImmediate (node:internal/timers:471:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="mocker" timestamp="2023-09-11T21:08:33" tests="0" file="C:\Users\newac\Desktop\Js\scope,class\8.4.async\8.4.async\test\index.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="users mocker" timestamp="2023-09-11T21:08:33" tests="2" file="C:\Users\newac\Desktop\Js\scope,class\8.4.async\8.4.async\test\index.js" time="0.0010" failures="2">
+    <testcase name="mocker users mocker should return users data" time="0.0010" classname="should return users data">
+      <failure message="getUsers is not a function" type="TypeError"><![CDATA[TypeError: getUsers is not a function
+    at Context.<anonymous> (test\index.js:48:38)
+    at process.processImmediate (node:internal/timers:471:21)]]></failure>
+    </testcase>
+    <testcase name="mocker users mocker should return users data in asynchronous way" time="0.0000" classname="should return users data in asynchronous way">
+      <failure message="getUsers is not a function" type="TypeError"><![CDATA[TypeError: getUsers is not a function
+    at Context.<anonymous> (test\index.js:53:32)
+    at process.processImmediate (node:internal/timers:471:21)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="summarize1" timestamp="2023-09-11T21:08:33" tests="4" file="C:\Users\newac\Desktop\Js\scope,class\8.4.async\8.4.async\test\index.js" time="0.0040" failures="4">
+    <testcase name="summarize1 should return 9 for given promises" time="0.0010" classname="should return 9 for given promises">
+      <failure message="Expected values to be strictly equal:
+
+undefined !== 9
+" type="AssertionError"><![CDATA[AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 9
+
+    at Context.<anonymous> (test\index.js:63:16)]]></failure>
+    </testcase>
+    <testcase name="summarize1 should return 6 for given promises" time="0.0010" classname="should return 6 for given promises">
+      <failure message="Expected values to be strictly equal:
+
+undefined !== 6
+" type="AssertionError"><![CDATA[AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 6
+
+    at Context.<anonymous> (test\index.js:70:16)]]></failure>
+    </testcase>
+    <testcase name="summarize1 should return 11 for given promises" time="0.0010" classname="should return 11 for given promises">
+      <failure message="Expected values to be strictly equal:
+
+undefined !== 12
+" type="AssertionError"><![CDATA[AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 12
+
+    at Context.<anonymous> (test\index.js:77:16)]]></failure>
+    </testcase>
+    <testcase name="summarize1 should return 16 for given promises" time="0.0010" classname="should return 16 for given promises">
+      <failure message="Expected values to be strictly equal:
+
+undefined !== 16
+" type="AssertionError"><![CDATA[AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 16
+
+    at Context.<anonymous> (test\index.js:85:16)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="summarize2" timestamp="2023-09-11T21:08:33" tests="7" file="C:\Users\newac\Desktop\Js\scope,class\8.4.async\8.4.async\test\index.js" time="0.0090" failures="7">
+    <testcase name="summarize2 should return 9 for given promises" time="0.0010" classname="should return 9 for given promises">
+      <failure message="Expected values to be strictly equal:
+
+undefined !== 9
+" type="AssertionError"><![CDATA[AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 9
+
+    at Context.<anonymous> (test\index.js:93:16)]]></failure>
+    </testcase>
+    <testcase name="summarize2 should return 6 for given promises" time="0.0010" classname="should return 6 for given promises">
+      <failure message="Expected values to be strictly equal:
+
+undefined !== 6
+" type="AssertionError"><![CDATA[AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 6
+
+    at Context.<anonymous> (test\index.js:100:16)]]></failure>
+    </testcase>
+    <testcase name="summarize2 should return 11 for given promises" time="0.0020" classname="should return 11 for given promises">
+      <failure message="Expected values to be strictly equal:
+
+undefined !== 12
+" type="AssertionError"><![CDATA[AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 12
+
+    at Context.<anonymous> (test\index.js:107:16)]]></failure>
+    </testcase>
+    <testcase name="summarize2 should return 16 for given promises" time="0.0010" classname="should return 16 for given promises">
+      <failure message="Expected values to be strictly equal:
+
+undefined !== 16
+" type="AssertionError"><![CDATA[AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 16
+
+    at Context.<anonymous> (test\index.js:115:16)]]></failure>
+    </testcase>
+    <testcase name="summarize2 should return 23 for given promises" time="0.0020" classname="should return 23 for given promises">
+      <failure message="Expected values to be strictly equal:
+
+undefined !== 23
+" type="AssertionError"><![CDATA[AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 23
+
+    at Context.<anonymous> (test\index.js:123:16)]]></failure>
+    </testcase>
+    <testcase name="summarize2 should return 16 for given promises" time="0.0010" classname="should return 16 for given promises">
+      <failure message="Expected values to be strictly equal:
+
+undefined !== 16
+" type="AssertionError"><![CDATA[AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 16
+
+    at Context.<anonymous> (test\index.js:132:16)]]></failure>
+    </testcase>
+    <testcase name="summarize2 should return 42 for given promises" time="0.0010" classname="should return 42 for given promises">
+      <failure message="Expected values to be strictly equal:
+
+undefined !== 42
+" type="AssertionError"><![CDATA[AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+undefined !== 42
+
+    at Context.<anonymous> (test\index.js:139:16)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
